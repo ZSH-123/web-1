@@ -1,0 +1,290 @@
+/* 首页样式文件 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?3a2xdr');
+    src:  url('../fonts/icomoon.eot?3a2xdr#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?3a2xdr') format('truetype'),
+      url('../fonts/icomoon.woff?3a2xdr') format('woff'),
+      url('../fonts/icomoon.svg?3a2xdr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main {
+    margin-top: 10px;
+    margin-left: 220px;
+    width: 980px;
+    height: 455px;
+}
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: blue;
+} 
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.lifeservice {
+    /* 隐藏超出显示的部分 */
+ 
+    overflow: hidden;
+    height: 209px;
+    border:1px solid #e4e4e4;
+    border-top:none;
+}
+.lifeservice ul  {
+    width: 260px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align:center;
+
+}
+.lifeservice ul li i {
+    display: inline-block;
+    margin-top: 12px;
+    width: 24px;
+    height: 28px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.lifeservice ul .minus {
+    position: relative;
+}
+
+.lifeservice ul .minus  div {
+    position: absolute;
+    top:-2px;
+    right: 0px;
+
+}
+.bargain {
+    margin-top:5px;
+}
+.news-hd {
+    padding:0 15px;
+    height: 33px;
+    border-bottom:1px dotted #e4e4e4;
+    line-height: 33px;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news-hd .more {
+    float:right;
+}
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: "\ea50";
+}
+.news-bd {
+    padding:5px 15px 0;
+}
+.news-bd ul li {
+    /* 溢出部分省略号显示 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 24px;
+    line-height: 24px;
+
+}
+
+/* 推荐模块 */
+.recom {
+    margin-top: 12px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top:30px;    
+
+}
+
+.recom_bd {
+    float: right;
+}
+
+
+.recom_bd  ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd  ul li img  {
+    width: 248px;
+    height: 163px;
+
+}
+
+
+.recom_bd  ul li:nth-child(-n+3)::after {
+    content:"";
+    position:absolute;
+    right: 0;
+    top:10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+
+}
+
+/* 猜你喜欢模块 start */
+
+.goods {
+  
+    height: 295px;
+}
+.goods_hd {
+ 
+    height: 60px;
+}
+
+.goods_hd h2 {
+    float: left;
+    margin-top:25px;
+    color:#333333;
+}
+
+.goods_hd a {
+    float: right;
+    padding-top:35px;
+}
+
+.goods_bd {
+    height: 235px;
+
+    border:1px solid #ededed;
+}
+.goods_bd ul {
+    width: 1222px;
+}
+
+.goods_bd ul li {
+    float: left;
+    width: 200px;
+    height: 235px;
+    text-align: center;
+}
+.goods_bd ul li img {
+    width: 140px;
+    height: 140px;
+    margin-top: 25px;
+
+}
+.goods_bd ul li p {
+    font-size: 12px;
+}
+.goods_bd ul li i {
+    font-size: 16px;
+    font-style: normal;
+    color:#df3033;
+    padding-right: 40px;
+}
+.goods_bd ul li:nth-child(even) {
+    width: 1px;
+    height: 45px;
+    background-color: #ededed;
+    margin-top:150px;
+}
+
+/* 猜你喜欢模块 end */
+
+
+/* 家用电器模块 start */
+.box_hd {
+    height: 30px;
+    border-bottom:2px solid #c81623;
+
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color:#c81623;
+    font-weight: 400;
+}
+.tab_list {
+    float: right;
+    line-height: 30px;
+
+}
+.tab_list  ul li {
+    float: left;
+
+}
+.tab_list  ul li a {
+    padding:0 15px
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+
+}
+
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul {
+    padding-left: 12px;
+
+
+}
+.col_210  img {
+    margin-top: 15px;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.col_221 .up {
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+.col_219 {
+    width: 219px;
+    border-left: 1px solid #ccc;
+
+}
+/* 家用电器模块 end */
